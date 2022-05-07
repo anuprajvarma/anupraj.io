@@ -1,0 +1,83 @@
+/* google font cdn link */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Homemade+Apple&family=Mouse+Memoirs&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Andika New Basic', sans-serif;
+}
+:root{
+    --black-color:#000000;
+    --grey-color:#2D4263;
+}
+/* navbar styling*/
+
+nav{
+    position: fixed;
+    top: 20px;
+    width: 100%;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+}
+.navbar{
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.navbar .menu a{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--black-color);
+    padding: 6px 0;
+    transition: all 0.4s ease;
+}
+.navbar .menu li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navbar .menu a:hover{
+    color: var(--grey-color);
+}
+.navbar .menu {
+    display: flex;
+}
+.navbar .logo{
+     font-weight: 700;
+     font-size: 25px;
+}
+
+/* homepage styling */
+
+.home{
+    height: 80vh;
+    width: 50%;
+}
+.home .intro{
+    position: relative;
+    left: 44%;
+    top: 30%;
+}
+.home .name{
+    font-size: 45px;
+    font-weight: 900.2;
+}
+.home .abt{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+.footer{
+    background-color: rgba(196, 196, 196, 0.2);
+    height: 20vh;
+    width: 100%;
+}
+.footer .footer-text{
+    position: fixed;
+    bottom: 45px;
+    right: 45%;   
+}
+
