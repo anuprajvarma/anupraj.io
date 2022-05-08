@@ -11,6 +11,8 @@
 :root{
     --black-color:#000000;
     --grey-color:#2D4263;
+    --yello-color:#F9B208;
+    --blue-color: #2D31FA;
 }
 /* navbar styling*/
 
@@ -39,6 +41,9 @@ nav{
     list-style: none;
     margin: 0 15px;
 }
+.navbar .menu li:hover{
+    text-decoration: underline;
+}
 .navbar .menu a:hover{
     color: var(--grey-color);
 }
@@ -54,11 +59,12 @@ nav{
 
 .home{
     height: 80vh;
-    width: 50%;
+    width: 100%;
+    
 }
 .home .intro{
-    position: relative;
-    left: 44%;
+    position: absolute;
+    left: 22.3%;
     top: 30%;
 }
 .home .name{
@@ -75,9 +81,21 @@ nav{
     height: 20vh;
     width: 100%;
 }
-.footer .footer-text{
-    position: fixed;
-    bottom: 45px;
-    right: 45%;   
+.footer .footer-content{
+    position: relative;
+    text-align: center;
+    top: 50%;
 }
-
+.footer .footer-text{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.footer .icon i{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 22px;
+}
+.footer .icon i:hover{
+    color: var(--blue-color);
+    cursor: pointer;
+}
