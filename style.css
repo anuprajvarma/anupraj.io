@@ -24,6 +24,13 @@
     margin: auto;
     margin-top: 50px;
 }
+li{
+    margin: 10px 0px;
+}
+hr{
+    width: 110%;
+    margin-top: 10px;
+}
 .navbar .menu a{
     font-size: 18px;
     font-weight: 600;
@@ -70,16 +77,35 @@
 .project{
     position: absolute;
     left: 22.3%;
-    top: 30%;
+    top: 15%;
     height: 60vh;
     width: 50%;
 }
 .blog{
     position: absolute;
     left: 22.3%;
-    top: 30%;
+    top: 15%;
     height: 60vh;
     width: 50%;
+}
+.blog-heading{
+    margin-top: 20px;
+}
+.blog .name{
+    font-size: 45px;
+    font-weight: 900.2;
+}
+.blog-section h1{
+     text-align: center;
+     margin-top: 50px;
+}
+.blog-date{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+.blog-heading:hover{
+    color: var(--blue-color);
+    cursor: pointer;
 }
 .home .name{
     font-size: 45px;
@@ -88,6 +114,22 @@
 .about .name{
     font-size: 45px;
     font-weight: 900.2;
+}
+.project .name{
+    font-size: 45px;
+    font-weight: 900.2;
+}
+.project-heading{
+    margin: 20px 0px 0px 30px;
+}
+.project-box{
+    display: inline-block;
+    margin:40px 35px;
+    border: none;
+    width: 400px;
+    height: 150px;
+    box-shadow: 5px 5px 5px 5px var(--black-color);
+    border-radius: 5px;
 }
 .about .discreaption{
     font-size: 18px;
@@ -105,7 +147,22 @@
     width: 100%;
     position: fixed;
     bottom: 0;
+    margin: 10px;
 }
+.css_btn_class {  
+    margin-top: 15px;
+    font-size: 22px;  
+    font-family: Arial Black;  
+    font-weight: normal;   
+    border-radius: 18px;  
+    border: 5px solid var(--black-color);  
+    padding: 6px 15px;  
+    text-decoration: none;  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8abbeb', endColorstr='#2f88e0');  
+    background-color: var(--black-color);  
+    color: #ffffff;  
+    display: inline-block;  
+} 
 .footer .footer-content{
     position: relative;
     text-align: center;
@@ -124,6 +181,20 @@
     color: var(--blue-color);
     cursor: pointer;
 }
-.tech-skill{
+.tech{
+     display: flex;
+}
+ul{
+    margin: 20px 60px 20px 20px;
+}
+.skill{
     margin-top: 50px;
 }
+.view-code{
+    position: relative;
+    left: 280px;
+    top: 40px;
+    cursor: pointer;
+    color: var(--blue-color);
+}
+
