@@ -19,7 +19,6 @@
 .navbar{
     display: flex;
     width: 55%;
-    justify-content: space-between;
     align-items: center;
     margin: auto;
     margin-top: 50px;
@@ -53,10 +52,7 @@ hr{
 .navbar .logo{
      font-weight: 700;
      font-size: 25px;
-     cursor: pointer;
-}
-.navbar .logo:hover{
-    color: var(--blue-color);
+     margin-right: 56%;
 }
 
 /* homepage styling */
@@ -147,7 +143,7 @@ hr{
     width: 100%;
     position: fixed;
     bottom: 0;
-    margin: 10px;
+    margin: 0px;
 }
 .css_btn_class {  
     margin-top: 15px;
@@ -176,6 +172,7 @@ hr{
     margin-left: 10px;
     margin-right: 10px;
     font-size: 22px;
+    color: var(--grey-color);
 }
 .footer .icon i:hover{
     color: var(--blue-color);
