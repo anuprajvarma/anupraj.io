@@ -15,20 +15,12 @@
     --blue-color: #2D31FA;
 }
 /* navbar styling*/
-
 .navbar{
     display: flex;
     width: 55%;
     align-items: center;
     margin: auto;
     margin-top: 50px;
-}
-li{
-    margin: 10px 0px;
-}
-hr{
-    width: 110%;
-    margin-top: 10px;
 }
 .navbar .menu a{
     font-size: 18px;
@@ -43,44 +35,48 @@ hr{
 }
 
 .navbar .menu a:hover{
-    color: var(--blue-color);
     cursor: pointer;
 }
 .navbar .menu {
     display: flex;
 }
+.navbar .menu-icon{
+    display: none;
+}
 .navbar .logo{
      font-weight: 700;
      font-size: 25px;
-     margin-right: 56%;
+     margin-right: 63%;
 }
 
 /* homepage styling */
  .home{
     position: absolute;
     left: 22.3%;
-    top: 30%;
-    height: 60vh;
+    margin-top: 200px;
+    height: 55vh;
     width: 50%;
+}
+.home .name{
+    font-size: 45px;
+    font-weight: 900.2;
+}
+.home .abt{
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: 700;
 }
 .about{
     position: absolute;
     left: 22.3%;
-    top: 15%;
-    height: 60vh;
-    width: 50%;
-}
-.project{
-    position: absolute;
-    left: 22.3%;
-    top: 15%;
-    height: 60vh;
+    margin-top: 40px;
+    height: 55vh;
     width: 50%;
 }
 .blog{
     position: absolute;
     left: 22.3%;
-    top: 15%;
+    margin-top: 40px;
     height: 60vh;
     width: 50%;
 }
@@ -103,10 +99,6 @@ hr{
     color: var(--blue-color);
     cursor: pointer;
 }
-.home .name{
-    font-size: 45px;
-    font-weight: 900.2;
-}
 .about .name{
     font-size: 45px;
     font-weight: 900.2;
@@ -117,6 +109,13 @@ hr{
 }
 .project-heading{
     margin: 20px 0px 0px 30px;
+}
+.project{
+    position: absolute;
+    left: 22.3%;
+    margin-top: 40px;
+    height: 60vh;
+    width: 50%;
 }
 .project-box{
     display: inline-block;
@@ -132,11 +131,6 @@ hr{
     margin-top: 90px;
     font-family: sans-serif;
 }
-.home .abt{
-    font-size: 25px;
-    margin-top: 10px;
-    font-weight: 700;
-}
 .footer{
     background-color: rgba(196, 196, 196, 0.2);
     height: 20vh;
@@ -146,7 +140,7 @@ hr{
     margin: 0px;
 }
 .css_btn_class {  
-    margin-top: 15px;
+    margin-top: 20px;
     font-size: 22px;  
     font-family: Arial Black;  
     font-weight: normal;   
@@ -167,6 +161,9 @@ hr{
 .footer .footer-text{
     font-size: 15px;
     margin-top: 20px;
+}
+.footer .footer-te{
+    color: var(--black-color);
 }
 .footer .icon i{
     margin-left: 10px;
@@ -194,4 +191,77 @@ ul{
     cursor: pointer;
     color: var(--blue-color);
 }
+li{
+    margin: 10px 0px;
+}
+hr{
+    width: 100%;
+    margin-top: 10px;
+}
 
+/* Responsive */
+
+@media(max-width: 1888px){
+    hr{
+        width: 102%;
+    }
+    .project-box{
+        display: inline-block;
+        margin:40px 25px;
+        border: none;
+        width: 400px;
+        height: 150px;
+        box-shadow: 5px 5px 5px 5px var(--black-color);
+        border-radius: 5px;
+    }
+    .blog-heading{
+        margin-top: 30px;
+    }
+}
+@media(max-width:1529px){
+    .home{
+        width: 60%;
+    }
+    hr{
+        width: 110%;
+    }
+    .abt br{
+        display: none;
+    }
+}
+@media(max-width:1200px){
+     .navbar .menu{
+        display: none;
+    }
+    .navbar .menu-icon{
+        display: block;
+        position: fixed;
+        right: 150px;
+        font-size: 30px;
+    }
+    .close-icon{
+        display: block;
+        font-size: 30px;
+        position: fixed;
+        right: 150px;
+   }
+}
+
+@media(max-width:1000px){
+    .home .name{
+        font-size: 38px;
+    }
+    .home .abt{
+        font-size: 18px;
+    }
+    .css_btn_class {
+        font-size: 16px;
+        border-radius: 13px;  
+    }
+}
+@media(min-width:1201px){
+     .menu-icon{
+        display: none;
+    }
+    
+}
