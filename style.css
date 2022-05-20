@@ -46,9 +46,8 @@
 .navbar .logo{
      font-weight: 700;
      font-size: 25px;
-     margin-right: 63%;
+     width: 100px;
 }
-
 /* homepage styling */
  .home{
     position: absolute;
@@ -72,6 +71,15 @@
     margin-top: 40px;
     height: 55vh;
     width: 50%;
+}
+.about .name{
+    font-size: 45px;
+    font-weight: 900.2;
+}
+.about .skill{
+    margin-top: 50px;
+    font-weight: 900;
+    font-size: 25px;
 }
 .blog{
     position: absolute;
@@ -99,9 +107,12 @@
     color: var(--blue-color);
     cursor: pointer;
 }
-.about .name{
-    font-size: 45px;
-    font-weight: 900.2;
+.project{
+    position: absolute;
+    left: 22.3%;
+    margin-top: 40px;
+    height: 60vh;
+    width: 50%;
 }
 .project .name{
     font-size: 45px;
@@ -110,20 +121,13 @@
 .project-heading{
     margin: 20px 0px 0px 30px;
 }
-.project{
-    position: absolute;
-    left: 22.3%;
-    margin-top: 40px;
-    height: 60vh;
-    width: 50%;
-}
 .project-box{
     display: inline-block;
-    margin:40px 35px;
+    margin: 20px 30px 20px 0px;
     border: none;
     width: 400px;
     height: 150px;
-    box-shadow: 5px 5px 5px 5px var(--black-color);
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     border-radius: 5px;
 }
 .about .discreaption{
@@ -162,7 +166,7 @@
     font-size: 15px;
     margin-top: 20px;
 }
-.footer .footer-te{
+.footer .creater{
     color: var(--black-color);
 }
 .footer .icon i{
@@ -175,14 +179,11 @@
     color: var(--blue-color);
     cursor: pointer;
 }
-.tech{
+ .about .tech{
      display: flex;
 }
 ul{
     margin: 20px 60px 20px 20px;
-}
-.skill{
-    margin-top: 50px;
 }
 .view-code{
     position: relative;
@@ -191,6 +192,9 @@ ul{
     cursor: pointer;
     color: var(--blue-color);
 }
+.nav-contain{
+    width: 65%;
+}
 li{
     margin: 10px 0px;
 }
@@ -198,20 +202,21 @@ hr{
     width: 100%;
     margin-top: 10px;
 }
-
+.main{
+    background-color: #2D31FA;
+}
 /* Responsive */
-
 @media(max-width: 1888px){
     hr{
         width: 102%;
     }
     .project-box{
         display: inline-block;
-        margin:40px 25px;
+        margin: 20px 30px 20px 0px;
         border: none;
         width: 400px;
         height: 150px;
-        box-shadow: 5px 5px 5px 5px var(--black-color);
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
         border-radius: 5px;
     }
     .blog-heading{
@@ -246,10 +251,13 @@ hr{
         right: 150px;
    }
 }
-
 @media(max-width:1000px){
     .home .name{
         font-size: 38px;
+    }
+    .about .name{
+        font-size: 38px;
+        font-weight: 900.2;
     }
     .home .abt{
         font-size: 18px;
@@ -258,10 +266,109 @@ hr{
         font-size: 16px;
         border-radius: 13px;  
     }
+    .about .discreaption{
+        font-size: 14px;
+        margin-top: 80px;
+        font-family: sans-serif;
+    }
 }
 @media(min-width:1201px){
-     .menu-icon{
+     .menu-icon2{
         display: none;
+        position: fixed;
+        right: 150px;
+        font-size: 30px;
+        color: #2D31FA;
     }
-    
+    .close-icon2{
+        display: none;
+        font-size: 30px;
+        position: fixed;
+        right: 150px;
+        color: #2D31FA;
+   }
+}
+@media(max-width:850px){
+    .navbar .menu-icon{
+        display: block;
+        position: fixed;
+        right: 100px;
+        font-size: 30px;
+    }
+    .close-icon{
+        display: block;
+        font-size: 30px;
+        position: fixed;
+        right: 100px;
+   }
+}
+@media(max-width:700px){
+    .home{
+        position: absolute;
+        left: 5%;
+        margin-top: 30%;
+        height: 55vh;
+        width: 90%;
+    }
+    .about{
+        position: absolute;
+        left: 5%;
+        margin-top: 40px;
+        height: 55vh;
+        width: 90%;
+    }
+    .project{
+        position: absolute;
+        left: 5%;
+        margin-top: 40px;
+        height: 55vh;
+        width: 90%;
+    }
+    .blog{
+        position: absolute;
+        left: 5%;
+        margin-top: 40px;
+        height: 55vh;
+        width: 80%;
+    }
+    .home .abt{
+        font-size: 17px;
+        margin-top: 15px;
+        font-weight: 700;
+    }
+    .navbar .menu-icon{
+        display: block;
+        position: fixed;
+        right: 10px;
+        font-size: 30px;
+    }
+    .close-icon{
+        display: block;
+        font-size: 30px;
+        position: fixed;
+        right: 10px;
+   }
+    .navbar{
+        display: flex;
+        width: 90%;
+        align-items: center;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+@media(max-width:450px){
+    .about .name{
+        font-size: 25px;
+        font-weight: 900.2;
+    }
+    .about .discreaption{
+        font-size: 15px;
+        margin-top: 80px;
+        font-family: sans-serif;
+    }
+    .about .skill{
+        margin-top: 40px;
+        font-weight: 900;
+        font-size: 23px;
+    }
 }
