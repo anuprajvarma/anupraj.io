@@ -50,36 +50,59 @@
 }
 /* homepage styling */
  .home{
-    position: absolute;
-    left: 22.3%;
     margin-top: 200px;
-    height: 55vh;
-    width: 50%;
+    display: flex;
 }
 .home .name{
     font-size: 45px;
     font-weight: 900.2;
+    width: 40%;
+    margin-left: 22%;
 }
 .home .abt{
     font-size: 25px;
     margin-top: 15px;
     font-weight: 700;
+    width: 40%;
+    margin-left: 22%;
 }
+.css_btn_class {  
+    margin-top: 20px;
+    font-size: 22px;  
+    margin-left: 22%;
+    font-family: Arial Black;  
+    font-weight: normal;   
+    border-radius: 18px;  
+    border: 5px solid var(--black-color);  
+    padding: 6px 15px;  
+    text-decoration: none;  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8abbeb', endColorstr='#2f88e0');  
+    background-color: var(--black-color);  
+    color: #ffffff;  
+    display: inline-block;  
+} 
 .about{
     position: absolute;
     left: 22.3%;
     margin-top: 40px;
     height: 55vh;
-    width: 50%;
+    width: 55%;
 }
 .about .name{
     font-size: 45px;
     font-weight: 900.2;
 }
 .about .skill{
-    margin-top: 50px;
+    margin-top: 30px;
     font-weight: 900;
     font-size: 25px;
+}
+.about .discreaption{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 18px;
+    margin-top: 60px;
+    font-family: sans-serif;
 }
 .blog{
     position: absolute;
@@ -90,6 +113,7 @@
 }
 .blog-heading{
     margin-top: 20px;
+    color: var(--black-color);
 }
 .blog .name{
     font-size: 45px;
@@ -130,11 +154,6 @@
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     border-radius: 5px;
 }
-.about .discreaption{
-    font-size: 18px;
-    margin-top: 90px;
-    font-family: sans-serif;
-}
 .footer{
     background-color: rgba(196, 196, 196, 0.2);
     height: 20vh;
@@ -143,20 +162,6 @@
     bottom: 0;
     margin: 0px;
 }
-.css_btn_class {  
-    margin-top: 20px;
-    font-size: 22px;  
-    font-family: Arial Black;  
-    font-weight: normal;   
-    border-radius: 18px;  
-    border: 5px solid var(--black-color);  
-    padding: 6px 15px;  
-    text-decoration: none;  
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8abbeb', endColorstr='#2f88e0');  
-    background-color: var(--black-color);  
-    color: #ffffff;  
-    display: inline-block;  
-} 
 .footer .footer-content{
     position: relative;
     text-align: center;
@@ -202,8 +207,10 @@ hr{
     width: 100%;
     margin-top: 10px;
 }
-.main{
-    background-color: #2D31FA;
+img{
+    width: 260px;
+    height: 220px;
+    margin-left: 50px;
 }
 /* Responsive */
 @media(max-width: 1888px){
@@ -224,9 +231,6 @@ hr{
     }
 }
 @media(max-width:1529px){
-    .home{
-        width: 60%;
-    }
     hr{
         width: 110%;
     }
@@ -303,13 +307,7 @@ hr{
    }
 }
 @media(max-width:700px){
-    .home{
-        position: absolute;
-        left: 5%;
-        margin-top: 30%;
-        height: 55vh;
-        width: 90%;
-    }
+    
     .about{
         position: absolute;
         left: 5%;

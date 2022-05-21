@@ -43,12 +43,10 @@ document.querySelector(".blog-menu").addEventListener("click",function(){
         blog.style.display="block";
         blog_section.style.display="none"; 
 })
-
 document.querySelector(".blog-heading").addEventListener("click",function(){
         document.querySelector(".blog-section").style.display="block";
         document.querySelector(".blog").style.display="none";
 })
-
 menuIcon.addEventListener("click",function(){
         document.querySelector(".close-icon").style.display="block";
         document.querySelector(".menu-icon").style.display="none";
