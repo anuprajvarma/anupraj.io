@@ -17,8 +17,8 @@
 /* navbar styling*/
 .navbar{
     display: flex;
-    width: 55%;
-    align-items: center;
+    width: 1050px;
+    text-align: center;
     margin: auto;
     margin-top: 50px;
 }
@@ -50,52 +50,77 @@
 }
 /* homepage styling */
  .home{
-    margin-top: 200px;
     display: flex;
+    margin: auto;
+    margin-top: 200px;
+    width: 1050px;
 }
 .home .name{
     font-size: 45px;
     font-weight: 900.2;
-    width: 40%;
-    margin-left: 22%;
+    width: 450px;
 }
 .home .abt{
-    font-size: 25px;
-    margin-top: 15px;
-    font-weight: 700;
-    width: 40%;
-    margin-left: 22%;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 550;
+    width: 900px;
 }
 .css_btn_class {  
+    margin-top: 10px;
+    font-size: 22px;  
+    font-family: Arial Black;  
+    font-weight: normal;   
+    border-radius: 5px;  
+    border: 5px solid var(--black-color);  
+    padding: 6px 15px;  
+    text-decoration: none;  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8abbeb', endColorstr='#2f88e0');  
+    background-color: var(--black-color);  
+    color: #ffffff;  
+    display: inline-block;  
+} 
+.css_btn_class:hover {  
     margin-top: 20px;
     font-size: 22px;  
     margin-left: 22%;
     font-family: Arial Black;  
-    font-weight: normal;   
-    border-radius: 18px;  
+    font-weight:100;   
+    border-radius: 5px;  
     border: 5px solid var(--black-color);  
     padding: 6px 15px;  
     text-decoration: none;  
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8abbeb', endColorstr='#2f88e0');  
     background-color: var(--black-color);  
     color: #ffffff;  
     display: inline-block;  
 } 
 .about{
-    position: absolute;
-    left: 22.3%;
-    margin-top: 40px;
-    height: 55vh;
-    width: 55%;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    width: 1050px;
+}
+.about img{
+    width: 260px;
+    height: 220px;
+    margin-left: 50px;
+}
+.about .tech{
+    display: flex;
+    margin-top: -10px;
 }
 .about .name{
     font-size: 45px;
     font-weight: 900.2;
 }
 .about .skill{
-    margin-top: 30px;
+    margin-top: 20px;
     font-weight: 900;
     font-size: 25px;
+    overflow: hidden;
 }
 .about .discreaption{
     display: grid;
@@ -105,11 +130,10 @@
     font-family: sans-serif;
 }
 .blog{
-    position: absolute;
-    left: 22.3%;
-    margin-top: 40px;
-    height: 60vh;
-    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    width: 1050px;
 }
 .blog-heading{
     margin-top: 20px;
@@ -132,11 +156,10 @@
     cursor: pointer;
 }
 .project{
-    position: absolute;
-    left: 22.3%;
-    margin-top: 40px;
-    height: 60vh;
-    width: 50%;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    width: 1050px;
 }
 .project .name{
     font-size: 45px;
@@ -145,13 +168,57 @@
 .project-heading{
     margin: 20px 0px 0px 30px;
 }
-.project-box{
+.project .view-code{
+    position: relative;
+    left: 280px;
+    top: 40px;
+    cursor: pointer;
+    width: 80px;
+    color: var(--blue-color);
+}
+.project .border-style{
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+    }
+.project-box1{
     display: inline-block;
     margin: 20px 30px 20px 0px;
     border: none;
     width: 400px;
     height: 150px;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 5px;
+}
+.project-box1:hover{
+    display: inline-block;
+    margin: 20px 30px 20px 0px;
+    border: none;
+    width: 400px;
+    height: 150px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 5px;
+}
+.project-box2{
+    display: inline-block;
+    margin: 20px 30px 20px 0px;
+    border: none;
+    width: 400px;
+    height: 150px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    border-radius: 5px;
+}
+.project-box2:hover{
+    display: inline-block;
+    margin: 20px 30px 20px 0px;
+    border: none;
+    width: 400px;
+    height: 150px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border-radius: 5px;
 }
 .footer{
@@ -163,13 +230,17 @@
     margin: 0px;
 }
 .footer .footer-content{
-    position: relative;
-    text-align: center;
-    top: 50%;
+    display: flex;
+    margin: auto;
+    width: 330px;
+    margin-top: 100px;
 }
 .footer .footer-text{
+    display: flex;
+    margin: auto;
+    width: 390px;
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 .footer .creater{
     color: var(--black-color);
@@ -184,18 +255,8 @@
     color: var(--blue-color);
     cursor: pointer;
 }
- .about .tech{
-     display: flex;
-}
 ul{
     margin: 20px 60px 20px 20px;
-}
-.view-code{
-    position: relative;
-    left: 280px;
-    top: 40px;
-    cursor: pointer;
-    color: var(--blue-color);
 }
 .nav-contain{
     width: 65%;
@@ -207,166 +268,4 @@ hr{
     width: 100%;
     margin-top: 10px;
 }
-img{
-    width: 260px;
-    height: 220px;
-    margin-left: 50px;
-}
 /* Responsive */
-@media(max-width: 1888px){
-    hr{
-        width: 102%;
-    }
-    .project-box{
-        display: inline-block;
-        margin: 20px 30px 20px 0px;
-        border: none;
-        width: 400px;
-        height: 150px;
-        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-        border-radius: 5px;
-    }
-    .blog-heading{
-        margin-top: 30px;
-    }
-}
-@media(max-width:1529px){
-    hr{
-        width: 110%;
-    }
-    .abt br{
-        display: none;
-    }
-}
-@media(max-width:1200px){
-     .navbar .menu{
-        display: none;
-    }
-    .navbar .menu-icon{
-        display: block;
-        position: fixed;
-        right: 150px;
-        font-size: 30px;
-    }
-    .close-icon{
-        display: block;
-        font-size: 30px;
-        position: fixed;
-        right: 150px;
-   }
-}
-@media(max-width:1000px){
-    .home .name{
-        font-size: 38px;
-    }
-    .about .name{
-        font-size: 38px;
-        font-weight: 900.2;
-    }
-    .home .abt{
-        font-size: 18px;
-    }
-    .css_btn_class {
-        font-size: 16px;
-        border-radius: 13px;  
-    }
-    .about .discreaption{
-        font-size: 14px;
-        margin-top: 80px;
-        font-family: sans-serif;
-    }
-}
-@media(min-width:1201px){
-     .menu-icon2{
-        display: none;
-        position: fixed;
-        right: 150px;
-        font-size: 30px;
-        color: #2D31FA;
-    }
-    .close-icon2{
-        display: none;
-        font-size: 30px;
-        position: fixed;
-        right: 150px;
-        color: #2D31FA;
-   }
-}
-@media(max-width:850px){
-    .navbar .menu-icon{
-        display: block;
-        position: fixed;
-        right: 100px;
-        font-size: 30px;
-    }
-    .close-icon{
-        display: block;
-        font-size: 30px;
-        position: fixed;
-        right: 100px;
-   }
-}
-@media(max-width:700px){
-    
-    .about{
-        position: absolute;
-        left: 5%;
-        margin-top: 40px;
-        height: 55vh;
-        width: 90%;
-    }
-    .project{
-        position: absolute;
-        left: 5%;
-        margin-top: 40px;
-        height: 55vh;
-        width: 90%;
-    }
-    .blog{
-        position: absolute;
-        left: 5%;
-        margin-top: 40px;
-        height: 55vh;
-        width: 80%;
-    }
-    .home .abt{
-        font-size: 17px;
-        margin-top: 15px;
-        font-weight: 700;
-    }
-    .navbar .menu-icon{
-        display: block;
-        position: fixed;
-        right: 10px;
-        font-size: 30px;
-    }
-    .close-icon{
-        display: block;
-        font-size: 30px;
-        position: fixed;
-        right: 10px;
-   }
-    .navbar{
-        display: flex;
-        width: 90%;
-        align-items: center;
-        margin: auto;
-        margin-top: 50px;
-    }
-}
-@media(max-width:450px){
-    .about .name{
-        font-size: 25px;
-        font-weight: 900.2;
-    }
-    .about .discreaption{
-        font-size: 15px;
-        margin-top: 80px;
-        font-family: sans-serif;
-    }
-    .about .skill{
-        margin-top: 40px;
-        font-weight: 900;
-        font-size: 23px;
-    }
-}
