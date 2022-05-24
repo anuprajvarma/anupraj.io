@@ -100,8 +100,9 @@
 } 
 .about{
     display: flex;
+    flex-direction: column;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 80px;
     width: 1050px;
 }
 .about img{
@@ -137,8 +138,9 @@
 }
 .blog{
     display: flex;
+    flex-direction: column;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 80px;
     width: 1050px;
 }
 .blog-heading{
@@ -164,8 +166,9 @@
 }
 .project{
     display: flex;
+    flex-direction: column;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 80px;
     width: 1050px;
 }
 .project .name{
