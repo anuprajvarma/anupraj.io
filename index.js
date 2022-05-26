@@ -7,13 +7,11 @@ let blog_section = document.querySelector(".blog-section");
 let closeIcon = document.querySelector(".close-icon");
 let menuIcon = document.querySelector(".menu-icon");
 
-
 home.style.display="block";
 about.style.display="none";
 project.style.display="none";
 blog.style.display="none";
 blog_section.style.display="none";
-closeIcon.style.display="none";
 
 document.querySelector(".home-menu").addEventListener("click",function(){
         home.style.display="block";
@@ -46,6 +44,7 @@ document.querySelector(".blog-menu").addEventListener("click",function(){
 menuIcon.addEventListener("click",function(){
         document.querySelector(".close-icon").style.display="block";
         document.querySelector(".menu-icon").style.display="none";
+        document.querySelector("body").style.backgroundColor="red";
 })
 closeIcon.addEventListener("click",function(){
         document.querySelector(".menu-icon").style.display="block";
