@@ -41,12 +41,6 @@ document.querySelector(".blog-menu").addEventListener("click",function(){
         blog.style.display="block";
         blog_section.style.display="none"; 
 })
-menuIcon.addEventListener("click",function(){
-        document.querySelector(".close-icon").style.display="block";
-        document.querySelector(".menu-icon").style.display="none";
-        document.querySelector("body").style.backgroundColor="red";
-})
-closeIcon.addEventListener("click",function(){
-        document.querySelector(".menu-icon").style.display="block";
-        document.querySelector(".close-icon").style.display="none";
-})
+function menu(){
+         document.querySelector("#mynav").style.width="100%";
+}

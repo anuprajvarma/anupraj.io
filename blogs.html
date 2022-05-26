@@ -7,6 +7,7 @@
     <title>Blog </title>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon (1).png">
     <!--Fontawesom Icons-->
     <script
       src="https://kit.fontawesome.com/17c86fde5a.js"
@@ -19,8 +20,7 @@
             <div class="navbar">
                 <div class="logo">Anupraj</div>
                 <div class="nav-contain"></div>
-                <p class="menu-icon"><i class="fa-solid fa-bars"></i></p>
-                <p class="close-icon"><i class="fa-solid fa-xmark"></i></p>
+                <p class="menu-icon" onclick="menu()"><i class="fa-solid fa-bars"></i></p>
                 <div class="menu">
                     <a href="index.html">Home</a>
                     <a href="about.html">About</a>
@@ -29,14 +29,22 @@
                </div>
            </div>
         </nav>
+        <div class="overlay" id="mynav">
+          <div class="overlay-content">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="project.html">Project</a>
+              <a href="blogs.html">Blog</a>
+          </div>
+      </div>
           <div class="blog">
             <div class="name">Blogs</div>
             <hr class="border-style">
             <div>
                 <a href="blogs/how_to_do_leetcode.html"><h1 class="blog-heading">How to do leetcode effectively<br><p class="blog-date">16 May 2022</p></h1> </a>
             </div>
-        </div>
-    </div>
+             </div>
+          </div>
      <!--Footer-->
 
      <footer class="footer">
